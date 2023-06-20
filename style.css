@@ -50,6 +50,7 @@ body{
     width: 40%;
     max-width: 400px;
     background-color: #111;
+    transition: 0.3s;
 }
 
 .box:hover{
@@ -135,7 +136,118 @@ body{
     background: #fff;
     text-align: center;
     margin-bottom: 20px;
+    transition: 0.3s;
 }
+
+.content a:hover{
+    background: #111;
+    color: #fff;
+    border-radius: 10rem;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clockcont{
+ padding: 15px;
+ margin-left: 30px;
+ margin-right: 30px;
+ border-radius: 10px;
+ box-shadow: 0px 0px 10px rgb(168, 158, 158);
+}
+
+#clock{
+    color: rgb(95, 95, 180);
+    font-size: calc(2.1vw + 2.1vh + 1.3vmin);
+    font-weight: 900;
+}
+#date{
+    color:rgb(176, 176, 209);
+    font-size: calc(.7vw + .7vh + .5vmin);
+}
+
+.btns{
+    margin-top: 2.5rem;
+    color: white;
+    padding:50px;
+}
+
+.backbtncont{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.3);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.backbtncont:before{
+    content: '';
+    position: absolute;
+    background: conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd004c);
+    /* height: 200%;
+    width: 200%;    
+    left: -50%;
+    top: -50%; */
+    inset: -30px ;
+    animation: spin 1.5s infinite linear;
+    transition: 0.2s;
+}
+
+.backbtncont:hover::before {
+    inset: -100px 30px;
+    /* animation-play-state: paused; */
+  }
+
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.backbtncont::after{
+    content: '';
+    position: absolute;
+    inset: 3px;
+    border-radius: 5px;
+    background: #111;
+    z-index: 1;
+}
+
+.txt{
+    z-index: 2;
+    position: relative;
+}
+
+.txt a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    font-size: calc(.7vw + .7vh + .5vmin);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -150,5 +262,4 @@ body{
     right: 10%;
     left: 10%;
     padding-bottom: 2rem;
-    
 }
