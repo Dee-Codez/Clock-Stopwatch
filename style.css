@@ -199,7 +199,7 @@ body{
     width: 200%;    
     left: -50%;
     top: -50%; */
-    inset: -30px ;
+    inset: -60px ;
     animation: spin 1.5s infinite linear;
     transition: 0.2s;
 }
