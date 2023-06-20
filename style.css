@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
+
+::selection{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bungee Hairline', cursive;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #111;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header{
+    margin-top: 3em;
+    color: rgb(117, 113, 113);
+    font-size: 1.3em;
+    padding: 20px;
+    text-align: center;
+}
+
+.cont{
+    margin-top: 6rem;
+    position: relative;
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    align-content: center;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.box{
+    position: relative;
+    min-width: 250px;
+    width: 40%;
+    max-width: 400px;
+    background-color: #111;
+}
+
+.box:hover{
+    transform: translateY(-20px);
+}
+
+.box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+}
+
+.box::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+    filter: blur(20px);
+}
+
+.box:nth-child(2)::before,
+.box:nth-child(2)::after{
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+
+.box span{
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    right: 6px;
+    left: 6px;
+    background: rgba(0,0,0,0.6);
+    z-index: 2;
+}
+
+.box span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+
+}
+
+.content{
+    position: relative;
+    z-index: 10;
+    padding: 20px 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.content h2{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.content p{
+    font-size: 1.2em;
+    line-height: 1.8em;
+    font-weight:500;
+    text-align: center;
+}
+
+.content a{
+    width: 60%;
+    margin-left: 20%;
+    color: #111;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    background: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.credits{
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+    bottom: 0;
+    right: 10%;
+    left: 10%;
+    padding-bottom: 2rem;
+    
+}
