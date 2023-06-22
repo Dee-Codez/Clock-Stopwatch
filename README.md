@@ -1,5 +1,7 @@
 # Clock-Stopwatch
 A basic JS implementation with full flex on the design end by CSS
+<br/>
+Deployment : [https://dee-codez.github.io/Clock-Stopwatch/](https://dee-codez.github.io/Clock-Stopwatch/)
 ## Screenshots
 ![image](https://github.com/Dee-Codez/Clock-Stopwatch/assets/114132607/c3443cec-3b2d-441b-9031-d1c2487d67c1)
 <br/>
